@@ -877,9 +877,9 @@ function onDeviceReady() {
 
         ////Show image if it exists
         //if (AdvertsEntries[SelectedAdvertsEntry].adpictureid != -1) {
-        //    //contentHTML += '<img style="width:256px; box-shadow: 5px 5px 2px #8d8787; -moz-border-radius: 5px; border-radius: 5px;" alt="Advert Image" src="http://webservices.nmmu.ac.za/mobileappdev/GetAdvertImage.ashx?id=' + AdvertsEntries[SelectedAdvertsEntry].adpictureid + '" />';
+        //    //contentHTML += '<img style="width:256px; box-shadow: 5px 5px 2px #8d8787; -moz-border-radius: 5px; border-radius: 5px;" alt="Advert Image" src="http://webservices.nmmu.ac.za/mobileapp/GetAdvertImage.ashx?id=' + AdvertsEntries[SelectedAdvertsEntry].adpictureid + '" />';
         //    contentHTML += '<div style="text-align:center">';
-        //    contentHTML += '<img class="AdvertImage" alt="Advert Image" src="http://webservices.nmmu.ac.za/mobileappdev/GetAdvertImage.ashx?id=' + AdvertsEntries[SelectedAdvertsEntry].adpictureid + '" />';
+        //    contentHTML += '<img class="AdvertImage" alt="Advert Image" src="http://webservices.nmmu.ac.za/mobileapp/GetAdvertImage.ashx?id=' + AdvertsEntries[SelectedAdvertsEntry].adpictureid + '" />';
         //    contentHTML += '</div>';
         //}
 
@@ -894,9 +894,9 @@ function onDeviceReady() {
 
         //Show image if it exists
         if (AdvertsEntries[SelectedAdvertsEntry].adpictureid != -1) {
-            //contentHTML += '<img style="width:256px; box-shadow: 5px 5px 2px #8d8787; -moz-border-radius: 5px; border-radius: 5px;" alt="Advert Image" src="http://webservices.nmmu.ac.za/mobileappdev/GetAdvertImage.ashx?id=' + AdvertsEntries[SelectedAdvertsEntry].adpictureid + '" />';
+            //contentHTML += '<img style="width:256px; box-shadow: 5px 5px 2px #8d8787; -moz-border-radius: 5px; border-radius: 5px;" alt="Advert Image" src="http://webservices.nmmu.ac.za/mobileapp/GetAdvertImage.ashx?id=' + AdvertsEntries[SelectedAdvertsEntry].adpictureid + '" />';
             contentHTML += '<p style="text-align:center">';
-            contentHTML += '<img class="AdvertImage" alt="Advert Image" src="http://webservices.nmmu.ac.za/mobileappdev/GetAdvertImage.ashx?id=' + AdvertsEntries[SelectedAdvertsEntry].adpictureid + '" /><br /><br />';
+            contentHTML += '<img class="AdvertImage" alt="Advert Image" src="http://webservices.nmmu.ac.za/mobileapp/GetAdvertImage.ashx?id=' + AdvertsEntries[SelectedAdvertsEntry].adpictureid + '" /><br /><br />';
             contentHTML += '</p>';
         }
 
@@ -995,7 +995,7 @@ function onDeviceReady() {
         ////Show image if it exists.
         //if (SearchAdvertsEntries[SelectedSearchAdvertsEntry].adpictureid != -1) {
         //    contentHTML += '<div style="text-align:center">';
-        //    contentHTML += '<img class="AdvertImage" alt="Advert Image" src="http://webservices.nmmu.ac.za/mobileappdev/GetAdvertImage.ashx?id=' + SearchAdvertsEntries[SelectedSearchAdvertsEntry].adpictureid + '" />';
+        //    contentHTML += '<img class="AdvertImage" alt="Advert Image" src="http://webservices.nmmu.ac.za/mobileapp/GetAdvertImage.ashx?id=' + SearchAdvertsEntries[SelectedSearchAdvertsEntry].adpictureid + '" />';
         //    contentHTML += '</div>';
         //}
 
@@ -1012,7 +1012,7 @@ function onDeviceReady() {
         //Show image if it exists
         if (SearchAdvertsEntries[SelectedSearchAdvertsEntry].adpictureid != -1) {
             contentHTML += '<p style="text-align:center">';
-            contentHTML += '<img class="AdvertImage" alt="Advert Image" src="http://webservices.nmmu.ac.za/mobileappdev/GetAdvertImage.ashx?id=' + SearchAdvertsEntries[SelectedSearchAdvertsEntry].adpictureid + '" /><br /><br />';
+            contentHTML += '<img class="AdvertImage" alt="Advert Image" src="http://webservices.nmmu.ac.za/mobileapp/GetAdvertImage.ashx?id=' + SearchAdvertsEntries[SelectedSearchAdvertsEntry].adpictureid + '" /><br /><br />';
             contentHTML += '</p>';
         }
 
@@ -1052,7 +1052,7 @@ function onDeviceReady() {
         ////Show image if it exists
         //if (EditAdvertsEntries[SelectedEditAdvertsEntry].adpictureid != -1) {
         //    contentHTML += '<div style="text-align:center">';
-        //    contentHTML += '<img class="AdvertImage" alt="Advert Image" src="http://webservices.nmmu.ac.za/mobileappdev/GetAdvertImage.ashx?id=' + EditAdvertsEntries[SelectedEditAdvertsEntry].adpictureid + '" />';
+        //    contentHTML += '<img class="AdvertImage" alt="Advert Image" src="http://webservices.nmmu.ac.za/mobileapp/GetAdvertImage.ashx?id=' + EditAdvertsEntries[SelectedEditAdvertsEntry].adpictureid + '" />';
         //    contentHTML += '</div>';
         //}
 
@@ -1067,7 +1067,7 @@ function onDeviceReady() {
         //Show image if it exists
         if (EditAdvertsEntries[SelectedEditAdvertsEntry].adpictureid != -1) {
             contentHTML += '<p style="text-align:center">';
-            contentHTML += '<img class="AdvertImage" alt="Advert Image" src="http://webservices.nmmu.ac.za/mobileappdev/GetAdvertImage.ashx?id=' + EditAdvertsEntries[SelectedEditAdvertsEntry].adpictureid + '" /><br /><br />';
+            contentHTML += '<img class="AdvertImage" alt="Advert Image" src="http://webservices.nmmu.ac.za/mobileapp/GetAdvertImage.ashx?id=' + EditAdvertsEntries[SelectedEditAdvertsEntry].adpictureid + '" /><br /><br />';
             contentHTML += '</p>';
         }
         contentHTML += '</li>';
@@ -1228,7 +1228,7 @@ function handleGetAdverts() {
 
     $.ajax({
         type: "POST",
-        url: "http://webservices.nmmu.ac.za/mobileappdev/Adverts.asmx/GetTop10Adverts",
+        url: "http://webservices.nmmu.ac.za/mobileapp/Adverts.asmx/GetTop10Adverts",
         contentType: 'application/json',
         //data: '{ Category: "' + category + '" }',
         dataType: "json"
@@ -1289,7 +1289,7 @@ function handleAdvertSearch() {
         $.mobile.loading('show');
         $.ajax({
             type: "POST",
-            url: "http://webservices.nmmu.ac.za/mobileappdev/Adverts.asmx/SearchAdverts",
+            url: "http://webservices.nmmu.ac.za/mobileapp/Adverts.asmx/SearchAdverts",
             contentType: 'application/json',
             data: '{ SearchText: "' + st + '" }',
             dataType: "json"
@@ -1367,7 +1367,7 @@ function handleGetMyAdverts() {
 
     $.ajax({
         type: "POST",
-        url: "http://webservices.nmmu.ac.za/mobileappdev/Adverts.asmx/GetMyAdverts",
+        url: "http://webservices.nmmu.ac.za/mobileapp/Adverts.asmx/GetMyAdverts",
         contentType: 'application/json',
         data: '{ ADUserName: "' + window.localStorage["username"] + '" }',
         dataType: "json"
@@ -1445,7 +1445,7 @@ function deleteGetMyAdvert(ID, PictureID) {
 
         $.ajax({
             type: "POST",
-            url: "http://webservices.nmmu.ac.za/mobileappdev/Adverts.asmx/DeleteAdvert",
+            url: "http://webservices.nmmu.ac.za/mobileapp/Adverts.asmx/DeleteAdvert",
             contentType: 'application/json',
             data: '{ ID: "' + ID + '", PictureID: "' + PictureID + '" }',
             dataType: "json",
@@ -1476,7 +1476,7 @@ function GetTimetable(username, password, selectedTerm, selectedDay) {
     $.mobile.loading('show');
     $.ajax({
         type: "POST",
-        url: "https://webservices.nmmu.ac.za/mobileappdev/Timetable.asmx/GetTimetable",
+        url: "https://webservices.nmmu.ac.za/mobileapp/Timetable.asmx/GetTimetable",
         contentType: 'application/json',
         data: '{ username: "' + username + '", password: "' + password + '", termin: "' + selectedTerm + '", dayin: "' + selectedDay + '" }',
         dataType: "json"
@@ -1535,7 +1535,7 @@ function handleLogin() {
         $.mobile.loading('show');
         $.ajax({
             type: "POST",
-            url: "https://webservices.nmmu.ac.za/mobileappdev/adauthentication.asmx/IsAuthenticated",
+            url: "https://webservices.nmmu.ac.za/mobileapp/adauthentication.asmx/IsAuthenticated",
             contentType: 'application/json',
             data: '{ username: "' + u + '", password: "' + p + '" }',
             dataType: "json"
@@ -1593,7 +1593,7 @@ function handleFeedback() {
     $.mobile.loading('show');
     $.ajax({
         type: "POST",
-        url: "http://webservices.nmmu.ac.za/mobileappdev/Feedback.asmx/SendFeedback",
+        url: "http://webservices.nmmu.ac.za/mobileapp/Feedback.asmx/SendFeedback",
         contentType: 'application/json',
         data: '{ yourName: "' + user + '", yourEmail: "' + useremail + '", feedback: "' + feedback + '" }',
         dataType: "json",
@@ -1626,7 +1626,7 @@ function handleSendProfileDetails(username) {
     $.mobile.loading('show');
     $.ajax({
         type: "POST",
-        url: "http://webservices.nmmu.ac.za/mobileappdev/EmailContactDetails.asmx/SendEmailContactDetails",
+        url: "http://webservices.nmmu.ac.za/mobileapp/EmailContactDetails.asmx/SendEmailContactDetails",
         contentType: 'application/json',
         data: '{ username: "' + username + '", recipientEmail: "' + recipientEmail + '" }',
         dataType: "json",
@@ -1677,7 +1677,7 @@ function GetAccountStatus(username, password) {
     var s = '';
     $.ajax({
         type: "POST",
-        url: "https://webservices.nmmu.ac.za/mobileappdev/AccountStatus.asmx/GetAccountStatus",
+        url: "https://webservices.nmmu.ac.za/mobileapp/AccountStatus.asmx/GetAccountStatus",
         contentType: 'application/json',
         data: '{ username: "' + username + '", password: "' + password + '" }',
         dataType: "json"
@@ -1702,7 +1702,7 @@ function GetAccountStatus(username, password) {
 function GetExamResults(username, password) {
     $.ajax({
         type: "POST",
-        url: "https://webservices.nmmu.ac.za/mobileappdev/ExamResults.asmx/GetExamResults",
+        url: "https://webservices.nmmu.ac.za/mobileapp/ExamResults.asmx/GetExamResults",
         contentType: 'application/json',
         //data: '{ StudentNumber: "' + username + '" }',
         data: '{ username: "' + username + '", password: "' + password + '" }',
@@ -1759,7 +1759,7 @@ function GetExamResults(username, password) {
 function GetExamTimetable(username, password) {
     $.ajax({
         type: "POST",
-        url: "https://webservices.nmmu.ac.za/mobileappdev/ExamTimetable.asmx/GetExamTimetable",
+        url: "https://webservices.nmmu.ac.za/mobileapp/ExamTimetable.asmx/GetExamTimetable",
         contentType: 'application/json',
         data: '{ username: "' + username + '", password: "' + password + '" }',
         dataType: "json"
@@ -1810,7 +1810,7 @@ function GetGraduationDetails(username, password) {
     var s = '';
     $.ajax({
         type: "POST",
-        url: "https://webservices.nmmu.ac.za/mobileappdev/GraduationDetails.asmx/GetGraduationDetails",
+        url: "https://webservices.nmmu.ac.za/mobileapp/GraduationDetails.asmx/GetGraduationDetails",
         contentType: 'application/json',
         data: '{ username: "' + username + '", password: "' + password + '" }',
         dataType: "json"
@@ -1833,7 +1833,7 @@ function GetADDetailsForAdvertPost(username, password) {
     var formAdvertPost = $("#FormPostAdvert");
     $.ajax({
         type: "POST",
-        url: "https://webservices.nmmu.ac.za/mobileappdev/adauthentication.asmx/IsAuthenticated",
+        url: "https://webservices.nmmu.ac.za/mobileapp/adauthentication.asmx/IsAuthenticated",
         contentType: 'application/json',
         data: '{ username: "' + username + '", password: "' + password + '" }',
         dataType: "json"
@@ -1853,7 +1853,7 @@ function GetADDetailsForFeedback(username, password) {
     var formFeedback = $("#FormFeedback");
     $.ajax({
         type: "POST",
-        url: "https://webservices.nmmu.ac.za/mobileappdev/adauthentication.asmx/IsAuthenticated",
+        url: "https://webservices.nmmu.ac.za/mobileapp/adauthentication.asmx/IsAuthenticated",
         contentType: 'application/json',
         data: '{ username: "' + username + '", password: "' + password + '" }',
         dataType: "json"
@@ -1879,10 +1879,10 @@ function GetMyModules(username, password) {
     var url = '';
 
     if (window.localStorage["isStudent"] != "true") {
-        url = "https://webservices.nmmu.ac.za/mobileappdev/MyModules.asmx/GetStaffModules";
+        url = "https://webservices.nmmu.ac.za/mobileapp/MyModules.asmx/GetStaffModules";
     }
     else {
-        url = "https://webservices.nmmu.ac.za/mobileappdev/MyModules.asmx/GetMyModules";
+        url = "https://webservices.nmmu.ac.za/mobileapp/MyModules.asmx/GetMyModules";
     }
 
     $.ajax({
@@ -1946,7 +1946,7 @@ function GetClassList(modulecode) {
 
     $.ajax({
         type: "POST",
-        url: "http://webservices.nmmu.ac.za/mobileappdev/MyModules.asmx/GetClassList",
+        url: "http://webservices.nmmu.ac.za/mobileapp/MyModules.asmx/GetClassList",
         contentType: 'application/json',
         data: '{ modulecode: "' + modulecode + '" }',
         dataType: "json",
@@ -1981,7 +1981,7 @@ function GetAlmanac() {
 
     $.ajax({
         type: "POST",
-        url: "http://webservices.nmmu.ac.za/mobileappdev/Almanac.asmx/GetAlmanac",
+        url: "http://webservices.nmmu.ac.za/mobileapp/Almanac.asmx/GetAlmanac",
         contentType: 'application/json',
         //data: '{ modulecode: "' + modulecode + '" }',
         dataType: "json",
@@ -2007,7 +2007,7 @@ function GetRegisteredAssets(username) {
 
     $.ajax({
         type: "POST",
-        url: "http://webservices.nmmu.ac.za/mobileappdev/Assets.asmx/GetUserAssets",
+        url: "http://webservices.nmmu.ac.za/mobileapp/Assets.asmx/GetUserAssets",
         contentType: 'application/json',
         data: '{ username: "' + username + '" }',
         dataType: "json",
@@ -2033,7 +2033,7 @@ function GetLeaveBalance(username) {
 
     $.ajax({
         type: "POST",
-        url: "http://webservices.nmmu.ac.za/mobileappdev/LeaveBalance.asmx/GetLeaveBalance",
+        url: "http://webservices.nmmu.ac.za/mobileapp/LeaveBalance.asmx/GetLeaveBalance",
         contentType: 'application/json',
         data: '{ username: "' + username + '" }',
         dataType: "json",
@@ -2059,7 +2059,7 @@ function GetUsage(username, isStudent) {
 
     $.ajax({
         type: "POST",
-        url: "http://webservices.nmmu.ac.za/mobileappdev/Usage.asmx/GetUsage",
+        url: "http://webservices.nmmu.ac.za/mobileapp/Usage.asmx/GetUsage",
         contentType: 'application/json',
         data: '{ username: "' + username + '", isStudent: "' + isStudent + '" }',
         dataType: "json",
@@ -2089,7 +2089,7 @@ function GetRegisteredADAssets(username) {
     var s = '';
     $.ajax({
         type: "POST",
-        url: "http://webservices.nmmu.ac.za/mobileappdev/Assets.asmx/GetUserADAssets",
+        url: "http://webservices.nmmu.ac.za/mobileapp/Assets.asmx/GetUserADAssets",
         contentType: 'application/json',
         data: '{ username: "' + username + '" }',
         dataType: "json",
@@ -2117,7 +2117,7 @@ function GetRegisteredADAssets(username) {
             if (i == 0) {
 
                 s += '<li style="height:100px;">';
-                s += '<img  class="ADImage" alt="User Image" src="http://webservices.nmmu.ac.za/mobileappdev/GetADImage.ashx?u=' + window.localStorage["username"] + '" />'
+                s += '<img  class="ADImage" alt="User Image" src="http://webservices.nmmu.ac.za/mobileapp/GetADImage.ashx?u=' + window.localStorage["username"] + '" />'
                 s += '<h2>'
                 s += v.FullName
                 s += '</h2>'
@@ -2153,7 +2153,7 @@ function GetStaffProfile(username) {
     var s = '';
     $.ajax({
         type: "POST",
-        url: "http://webservices.nmmu.ac.za/mobileappdev/NMMUID.asmx/GetNMMUID",
+        url: "http://webservices.nmmu.ac.za/mobileapp/NMMUID.asmx/GetNMMUID",
         contentType: 'application/json',
         data: '{ username: "' + username + '" }',
         dataType: "json",
@@ -2182,7 +2182,7 @@ function GetStaffProfile(username) {
 
 
                 s += '<li style="height:100px;">';
-                s += '<img class="ADImage" alt="User Image" src="http://webservices.nmmu.ac.za/mobileappdev/GetADImage.ashx?u=' + window.localStorage["username"] + '" />'
+                s += '<img class="ADImage" alt="User Image" src="http://webservices.nmmu.ac.za/mobileapp/GetADImage.ashx?u=' + window.localStorage["username"] + '" />'
                 s += '<h2>'
                 s += v.FullName
                 s += '</h2>'
@@ -2216,7 +2216,7 @@ function GetStudentProfile(username) {
     var s = '';
     $.ajax({
         type: "POST",
-        url: "http://webservices.nmmu.ac.za/mobileappdev/NMMUStudentID.asmx/GetNMMUStudentID",
+        url: "http://webservices.nmmu.ac.za/mobileapp/NMMUStudentID.asmx/GetNMMUStudentID",
         contentType: 'application/json',
         data: '{ username: "' + username + '" }',
         dataType: "json"
@@ -2224,7 +2224,7 @@ function GetStudentProfile(username) {
 
         $.each(msg.d, function (i, v) {
             s += '<li style="height:100px;">';
-            s += '<img  class="ADImage" alt="User Image" src="http://webservices.nmmu.ac.za/mobileappdev/GetADImage.ashx?u=' + window.localStorage["username"] + '" />';
+            s += '<img  class="ADImage" alt="User Image" src="http://webservices.nmmu.ac.za/mobileapp/GetADImage.ashx?u=' + window.localStorage["username"] + '" />';
             s += '<h2>';
             s += v.Title + ' ' + v.Firstnames + ' ' + v.Surname;
             s += '</h2>';
@@ -2370,7 +2370,7 @@ function uploadPicture() {
 
         $.ajax({
             type: "POST",
-            url: "http://webservices.nmmu.ac.za/mobileappdev/FileUpload.ashx",
+            url: "http://webservices.nmmu.ac.za/mobileapp/FileUpload.ashx",
             // DO NOT SET CONTENT TYPE to json
             // contentType: "application/json; charset=utf-8", 
             // DataType needs to stay, otherwise the response object
@@ -2431,7 +2431,7 @@ function uploadPicture() {
 
         // Transfer picture to server
         var ft = new FileTransfer();
-        ft.upload(imageURI, encodeURI("http://webservices.nmmu.ac.za/mobileappdev/FileUpload.ashx"), function (r) {
+        ft.upload(imageURI, encodeURI("http://webservices.nmmu.ac.za/mobileapp/FileUpload.ashx"), function (r) {
             document.getElementById('camera_status').innerHTML = "Upload successful: " + r.bytesSent + " bytes uploaded.";
             $("#submitAdvert").removeAttr("disabled");
             $.mobile.loading('hide');
