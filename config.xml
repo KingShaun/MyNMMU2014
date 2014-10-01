@@ -57,7 +57,15 @@
         A list of available plugins are available at https://build.phonegap.com/docs/plugins
     -->
     <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />  
-    <plugin name="StatusBar" value="org.apache.cordova.StatusBar" /> 
+    <!--<plugin name="StatusBar" value="org.apache.cordova.StatusBar" />--> 
+  
+   <gap:plugin name="org.apache.cordova.StatusBar" />
+  
+   <gap:plugin name="org.apache.cordova.device" />
+  
+   <gap:platform name="ios" />
+   <gap:platform name="android" />
+
 
     <!-- Define app icon for each platform.
     
