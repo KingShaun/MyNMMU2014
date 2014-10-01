@@ -60,8 +60,10 @@
         <gap:plugin name="Example" />
         A list of available plugins are available at https://build.phonegap.com/docs/plugins
     -->
-    <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />  
-    <!--<plugin name="StatusBar" value="org.apache.cordova.StatusBar" />--> 
+    <!--<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />  
+    <plugin name="StatusBar" value="org.apache.cordova.StatusBar" />--> 
+  
+   <gap:plugin name="org.li8.inappbrowser" version="0.1" />
   
    <gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
   
