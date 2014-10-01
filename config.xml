@@ -59,7 +59,7 @@
     <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />  
     <!--<plugin name="StatusBar" value="org.apache.cordova.StatusBar" />--> 
   
-   <gap:plugin name="org.apache.cordova.StatusBar" />
+   <gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
   
    <gap:plugin name="org.apache.cordova.device" />
   
