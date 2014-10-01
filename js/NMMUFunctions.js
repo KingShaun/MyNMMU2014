@@ -61,14 +61,6 @@ var prevPage = "#PageHome";
 
 function onDeviceReady() {
 
-    //StatusBar.overlaysWebView(false);
-    
-
-    //$('.ui-header > *').css('margin-top', function (index, curValue) { return parseInt(curValue, 10) + 20 + 'px'; });
-
-
-    //document.addEventListener("backbutton", handleBackButton, false);
-
     //Stores news entries
     var NewsEntries = [];
     var SelectedNewsEntry = "";
@@ -434,6 +426,10 @@ function onDeviceReady() {
         //contentHTML += '<p>URL to enter in browser: ' + MyModulesEntries[SelectedModulesEntry].modulesharepoint + '</p>';
         contentHTML += '</li>';
 
+        contentHTML += '<li>';
+        contentHTML += '<a href="#" class="NMMUTubeLink">NMMUTube</a>'
+        contentHTML += '</li>';
+
         //Show moodle link if it exists
         if (MyModulesEntries[SelectedModulesEntry].modulemoodle != "0") {
             contentHTML += '<li>';
@@ -478,6 +474,10 @@ function onDeviceReady() {
     $(document).on('pageshow', '#PageMyModulesContent', function () {
         $(document).off('click', '.SharePointLink').on('click', '.SharePointLink', function (e) {
             window.open(MyModulesEntries[SelectedModulesEntry].modulesharepoint, '_system', 'location=yes');
+        });
+
+        $(document).off('click', '.NMMUTubeLink').on('click', '.NMMUTubeLink', function (e) {
+            window.open(MyModulesEntries[SelectedModulesEntry].modulenmmutube, '_blank', 'location=yes');
         });
 
         if (MyModulesEntries[SelectedModulesEntry].modulemoodle != "0") {
@@ -1203,7 +1203,6 @@ function init() {
     // Wait for PhoneGap to load
     //
 
-
     document.addEventListener("deviceready", onDeviceReady, false);
 
     delete init;
@@ -1909,6 +1908,7 @@ function GetMyModules(username, password) {
                 modulecode: v.SubjectCode,
                 modulename: v.SubjectName,
                 modulesharepoint: v.LinkSharePoint,
+                modulenmmutube: v.LinkNMMUTube,
                 modulemoodle: v.LinkMoodle,
                 modulemarks: v.MarkString
             };
