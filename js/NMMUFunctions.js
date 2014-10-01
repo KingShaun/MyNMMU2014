@@ -61,12 +61,7 @@ var prevPage = "#PageHome";
 
 function onDeviceReady() {
 
-
-    if (device.platform == "iOS" && parseFloat(device.version) >= 7.0) {
-        $("body").addClass("ios7");
-        $('body').append('<div id="ios7statusbar"/>');
-    }
-
+    StatusBar.overlaysWebView(false);
     
 
     //$('.ui-header > *').css('margin-top', function (index, curValue) { return parseInt(curValue, 10) + 20 + 'px'; });
