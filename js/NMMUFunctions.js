@@ -61,6 +61,10 @@ var prevPage = "#PageHome";
 
 function onDeviceReady() {
 
+    if (parseFloat(window.device.version) >= 7.0) {
+        document.body.style.marginTop = "20px";
+    }
+
     //document.addEventListener("backbutton", handleBackButton, false);
 
     //Stores news entries
@@ -1196,6 +1200,11 @@ function onDeviceReady() {
 function init() {
     // Wait for PhoneGap to load
     //
+
+    if (device.platform == "iOS" && parseFloat(device.version) >= 7.0) {
+        $('.ui-header > *').css('margin-top', function (index, curValue) {return parseInt(curValue, 10) + 20 + 'px';});
+    }
+
     document.addEventListener("deviceready", onDeviceReady, false);
 
     delete init;
