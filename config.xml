@@ -4,8 +4,8 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "za.ac.nmmu.mynmmu"
-        versionCode = "349"
-        version   = "1.0.3">
+        versionCode = "350"
+        version   = "1.0.4">
 
     <name>MyNMMU</name>
 
