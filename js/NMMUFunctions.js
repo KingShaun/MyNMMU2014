@@ -61,9 +61,16 @@ var prevPage = "#PageHome";
 
 function onDeviceReady() {
 
-    if (parseFloat(window.device.version) >= 7.0) {
-        document.body.style.marginTop = "20px";
+
+    if (device.platform == "iOS" && parseFloat(device.version) >= 7.0) {
+        $("body").addClass("ios7");
+        $('body').append('<div id="ios7statusbar"/>');
     }
+
+    
+
+    //$('.ui-header > *').css('margin-top', function (index, curValue) { return parseInt(curValue, 10) + 20 + 'px'; });
+
 
     //document.addEventListener("backbutton", handleBackButton, false);
 
@@ -1201,9 +1208,6 @@ function init() {
     // Wait for PhoneGap to load
     //
 
-    if (device.platform == "iOS" && parseFloat(device.version) >= 7.0) {
-        $('.ui-header > *').css('margin-top', function (index, curValue) {return parseInt(curValue, 10) + 20 + 'px';});
-    }
 
     document.addEventListener("deviceready", onDeviceReady, false);
 
