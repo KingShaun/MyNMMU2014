@@ -36,28 +36,6 @@
 
 // PhoneGap is ready
 //
-var prevPage = "#PageHome";
-
-//function handleBackButton() {
-
-
-//    if ($.mobile.activePage.is('#PageHome')) {
-//        document.removeEventListener("backbutton", handleBackButton, false);
-//        //Exit App
-//        //alert('Exit App');
-//    }
-//    else {
-//        if ($.mobile.activePage.is('#PageNewsContent')) {
-//            $.mobile.changePage('#PageNews');
-//        }
-//        else if ($.mobile.activePage.is('#PageEventsContent')) {
-//            $.mobile.changePage('#PageEvents');
-//        }
-//        else {
-//            $.mobile.changePage('#PageHome');
-//        }
-//    }
-//}
 
 function onDeviceReady() {
 
@@ -1205,7 +1183,7 @@ function init() {
 
     document.addEventListener("deviceready", onDeviceReady, false);
 
-    delete init;
+    //delete init;
 }
 
 //show loader
