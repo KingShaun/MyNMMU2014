@@ -163,3 +163,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003058', end
 .ui-page {
     -moz-backface-visibility: hidden;
 }
+
+
+.footer {position:fixed;z-index:10;bottom:0;width:100%}
