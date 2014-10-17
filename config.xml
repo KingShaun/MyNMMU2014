@@ -5,7 +5,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "za.ac.nmmu.mynmmu"
         versionCode = "350"
-        version   = "1.0.6">
+        version   = "1.0.7">
 
     <name>MyNMMU</name>
 
