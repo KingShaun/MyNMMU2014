@@ -874,7 +874,7 @@ function onDeviceReady() {
         contentHTML += '<p><strong>Email:</strong> <a href="mailto:' + AdvertsEntries[SelectedAdvertsEntry].ademail + '?subject=' + AdvertsEntries[SelectedAdvertsEntry].adsubject + '">' + AdvertsEntries[SelectedAdvertsEntry].ademail + '</a></p>';
         contentHTML += '<p><strong>Mobile:</strong> <a href="tel:' + AdvertsEntries[SelectedAdvertsEntry].admobile + '">' + AdvertsEntries[SelectedAdvertsEntry].admobile + '</a></p>';
         contentHTML += '<p><strong>Date submitted:</strong> ' + AdvertsEntries[SelectedAdvertsEntry].addatecreated + '</p><br />';
-        contentHTML += '<p>' + AdvertsEntries[SelectedAdvertsEntry].addescription + '</p><br />';
+        contentHTML += '<p style="text-overflow:ellipsis;overflow:visible;white-space:normal;">' + AdvertsEntries[SelectedAdvertsEntry].addescription + '</p><br />';
 
         //Show image if it exists
         if (AdvertsEntries[SelectedAdvertsEntry].adpictureid != -1) {
@@ -991,7 +991,7 @@ function onDeviceReady() {
         contentHTML += '<p><strong>Email:</strong> <a href="mailto:' + SearchAdvertsEntries[SelectedSearchAdvertsEntry].ademail + '?subject=' + SearchAdvertsEntries[SelectedSearchAdvertsEntry].adsubject + '">' + SearchAdvertsEntries[SelectedSearchAdvertsEntry].ademail + '</a></p>';
         contentHTML += '<p><strong>Mobile:</strong> <a href="tel:' + SearchAdvertsEntries[SelectedSearchAdvertsEntry].admobile + '">' + SearchAdvertsEntries[SelectedSearchAdvertsEntry].admobile + '</a></p>';
         contentHTML += '<p><strong>Date submitted:</strong> ' + SearchAdvertsEntries[SelectedSearchAdvertsEntry].addatecreated + '</p><br />';
-        contentHTML += '<p>' + SearchAdvertsEntries[SelectedSearchAdvertsEntry].addescription + '</p><br />';
+        contentHTML += '<p style="text-overflow:ellipsis;overflow:visible;white-space:normal;">' + SearchAdvertsEntries[SelectedSearchAdvertsEntry].addescription + '</p><br />';
 
         //Show image if it exists
         if (SearchAdvertsEntries[SelectedSearchAdvertsEntry].adpictureid != -1) {
