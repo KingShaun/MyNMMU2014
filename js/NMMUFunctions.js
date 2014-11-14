@@ -1771,7 +1771,8 @@ function GetExamTimetable(username, password) {
                 s += '<li>'
                 s += '<p><strong>Date:</strong> ' + v.Exam_Date + '</p>';
                 s += '<p><strong>Time:</strong> ' + v.Start_Time + '</p>';
-                s += '<p><strong>Venue:</strong> ' + v.Building_Name + ' (' + v.Building_No + ')</p>';
+                s += '<p><strong>Venue:</strong> ' + v.Room + ' (Floor: ' + v.Floor + ')</p>';
+                s += '<p><strong>Building:</strong> ' + v.Building_Name + ' (' + v.Building_No + ')</p>';
                 s += '<p><strong>Campus:</strong> ' + v.Campus_Name + '</p>';
                 s += '</li>'
             }
